@@ -36,9 +36,81 @@ const isPalindrome = (num) => {
     if (palidromNumber < 0) return false;
     while(palidromNumber !=0) {
         last_digit = palidromNumber % 10;
-        reversed = reversed*10`` + last_digit
+        reversed = reversed*10 + last_digit
         palidromNumber = Math.floor(palidromNumber/10);
     }
 
     return reversed === num;
+}
+
+
+// # Create three variables last_digit = number % 10 , reversedNumber = reversed**10 + lastdigit, palidromeNumber = palindrome/10 (remove the last digit using math.floor)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function isPalin(number) {
+    let last_digit;
+    let palindromeN = number;
+    let reverse;
+
+    while (palindromeN > 0) {
+        last_digit = palindromeN % 10;
+        reverse = reverse*10 + last_digit;
+        palindromeN = Math.floor(palindromeN / 10);
+    }
+
+    return reverse === number;
 }
